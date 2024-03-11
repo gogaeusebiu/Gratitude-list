@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43778F1E2B9F026C00B18B8E /* Gratitude_listApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F1D2B9F026C00B18B8E /* Gratitude_listApp.swift */; };
+		43778F222B9F026E00B18B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43778F212B9F026E00B18B8E /* Assets.xcassets */; };
+		43778F252B9F026E00B18B8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43778F242B9F026E00B18B8E /* Preview Assets.xcassets */; };
+		43778F2F2B9F026E00B18B8E /* Gratitude_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F2E2B9F026E00B18B8E /* Gratitude_listTests.swift */; };
+		43778F392B9F026E00B18B8E /* Gratitude_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F382B9F026E00B18B8E /* Gratitude_listUITests.swift */; };
+		43778F3B2B9F026E00B18B8E /* Gratitude_listUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F3A2B9F026E00B18B8E /* Gratitude_listUITestsLaunchTests.swift */; };
+		43778F492B9F0B8500B18B8E /* GratitudeList.json in Resources */ = {isa = PBXBuildFile; fileRef = 43778F482B9F0B8500B18B8E /* GratitudeList.json */; };
+		43778F4C2B9F0C2700B18B8E /* GratitudeList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43778F4A2B9F0C2700B18B8E /* GratitudeList.xcdatamodeld */; };
+		43778F4F2B9F17F400B18B8E /* GratitudeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F4E2B9F17F400B18B8E /* GratitudeListModel.swift */; };
+		43778F512B9F19DC00B18B8E /* GratitudeDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F502B9F19DC00B18B8E /* GratitudeDetailModel.swift */; };
+		43778F572B9F1B3700B18B8E /* CoreDataGratitudeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F562B9F1B3700B18B8E /* CoreDataGratitudeService.swift */; };
+		43778F5B2B9F1BC000B18B8E /* TextFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F5A2B9F1BC000B18B8E /* TextFileService.swift */; };
+		43778F5D2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F5C2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift */; };
+		43778F5F2B9F27E100B18B8E /* GratitudeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F5E2B9F27E100B18B8E /* GratitudeListView.swift */; };
+		43778F612B9F27F200B18B8E /* GratitudeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F602B9F27F200B18B8E /* GratitudeListViewModel.swift */; };
+		43778F642B9F2A3600B18B8E /* CoreDataGratitudeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F632B9F2A3600B18B8E /* CoreDataGratitudeMapper.swift */; };
+		43778F662B9F370000B18B8E /* GratitudeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F652B9F370000B18B8E /* GratitudeCard.swift */; };
+		43778F692B9F383300B18B8E /* DateFormatter+BaseTransformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F682B9F383300B18B8E /* DateFormatter+BaseTransformations.swift */; };
+		43778F6C2B9F407D00B18B8E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F6B2B9F407D00B18B8E /* Router.swift */; };
+		43778F6E2B9F40D100B18B8E /* GratitudeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F6D2B9F40D100B18B8E /* GratitudeDetailViewModel.swift */; };
+		43778F702B9F424500B18B8E /* GratitudeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F6F2B9F424500B18B8E /* GratitudeDetailView.swift */; };
+		43778F722B9F42C900B18B8E /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F712B9F42C900B18B8E /* RouterView.swift */; };
+		43778F752B9F468000B18B8E /* NavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F742B9F468000B18B8E /* NavigationTitle.swift */; };
+		43778F772B9F46D200B18B8E /* NavigationBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F762B9F46D200B18B8E /* NavigationBackButton.swift */; };
+		43778F792B9F477500B18B8E /* NavigationAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F782B9F477500B18B8E /* NavigationAddButton.swift */; };
+		43778F7D2B9F4A3900B18B8E /* AddGratitudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F7C2B9F4A3900B18B8E /* AddGratitudeView.swift */; };
+		43778F7F2B9F4A4600B18B8E /* AddGratitudeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F7E2B9F4A4600B18B8E /* AddGratitudeViewModel.swift */; };
+		43778F822B9F5C0B00B18B8E /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F812B9F5C0B00B18B8E /* TextFieldComponent.swift */; };
+		43778F862B9F5DFB00B18B8E /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F852B9F5DFB00B18B8E /* DateView.swift */; };
+		43778F882B9F5EC200B18B8E /* ListOfTagsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F872B9F5EC200B18B8E /* ListOfTagsComponent.swift */; };
+		43778F8A2B9F8E9400B18B8E /* ListOfImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F892B9F8E9400B18B8E /* ListOfImages.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43778F2B2B9F026E00B18B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43778F122B9F026C00B18B8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43778F192B9F026C00B18B8E;
+			remoteInfo = "Gratitude list";
+		};
+		43778F352B9F026E00B18B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43778F122B9F026C00B18B8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43778F192B9F026C00B18B8E;
+			remoteInfo = "Gratitude list";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43778F1A2B9F026C00B18B8E /* Gratitude list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gratitude list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43778F1D2B9F026C00B18B8E /* Gratitude_listApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gratitude_listApp.swift; sourceTree = "<group>"; };
+		43778F212B9F026E00B18B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43778F242B9F026E00B18B8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43778F2A2B9F026E00B18B8E /* Gratitude listTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gratitude listTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43778F2E2B9F026E00B18B8E /* Gratitude_listTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gratitude_listTests.swift; sourceTree = "<group>"; };
+		43778F342B9F026E00B18B8E /* Gratitude listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gratitude listUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43778F382B9F026E00B18B8E /* Gratitude_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gratitude_listUITests.swift; sourceTree = "<group>"; };
+		43778F3A2B9F026E00B18B8E /* Gratitude_listUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gratitude_listUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43778F482B9F0B8500B18B8E /* GratitudeList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GratitudeList.json; sourceTree = "<group>"; };
+		43778F4B2B9F0C2700B18B8E /* GratitudeList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GratitudeList.xcdatamodel; sourceTree = "<group>"; };
+		43778F4E2B9F17F400B18B8E /* GratitudeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeListModel.swift; sourceTree = "<group>"; };
+		43778F502B9F19DC00B18B8E /* GratitudeDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeDetailModel.swift; sourceTree = "<group>"; };
+		43778F562B9F1B3700B18B8E /* CoreDataGratitudeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataGratitudeService.swift; sourceTree = "<group>"; };
+		43778F5A2B9F1BC000B18B8E /* TextFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileService.swift; sourceTree = "<group>"; };
+		43778F5C2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataGratitudeServiceProtocol.swift; sourceTree = "<group>"; };
+		43778F5E2B9F27E100B18B8E /* GratitudeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeListView.swift; sourceTree = "<group>"; };
+		43778F602B9F27F200B18B8E /* GratitudeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeListViewModel.swift; sourceTree = "<group>"; };
+		43778F632B9F2A3600B18B8E /* CoreDataGratitudeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataGratitudeMapper.swift; sourceTree = "<group>"; };
+		43778F652B9F370000B18B8E /* GratitudeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeCard.swift; sourceTree = "<group>"; };
+		43778F682B9F383300B18B8E /* DateFormatter+BaseTransformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+BaseTransformations.swift"; sourceTree = "<group>"; };
+		43778F6B2B9F407D00B18B8E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		43778F6D2B9F40D100B18B8E /* GratitudeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeDetailViewModel.swift; sourceTree = "<group>"; };
+		43778F6F2B9F424500B18B8E /* GratitudeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeDetailView.swift; sourceTree = "<group>"; };
+		43778F712B9F42C900B18B8E /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		43778F742B9F468000B18B8E /* NavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitle.swift; sourceTree = "<group>"; };
+		43778F762B9F46D200B18B8E /* NavigationBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackButton.swift; sourceTree = "<group>"; };
+		43778F782B9F477500B18B8E /* NavigationAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAddButton.swift; sourceTree = "<group>"; };
+		43778F7C2B9F4A3900B18B8E /* AddGratitudeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGratitudeView.swift; sourceTree = "<group>"; };
+		43778F7E2B9F4A4600B18B8E /* AddGratitudeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGratitudeViewModel.swift; sourceTree = "<group>"; };
+		43778F812B9F5C0B00B18B8E /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
+		43778F852B9F5DFB00B18B8E /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		43778F872B9F5EC200B18B8E /* ListOfTagsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTagsComponent.swift; sourceTree = "<group>"; };
+		43778F892B9F8E9400B18B8E /* ListOfImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfImages.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43778F172B9F026C00B18B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43778F272B9F026E00B18B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43778F312B9F026E00B18B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43778F112B9F026C00B18B8E = {
+			isa = PBXGroup;
+			children = (
+				43778F1C2B9F026C00B18B8E /* Gratitude list */,
+				43778F2D2B9F026E00B18B8E /* Gratitude listTests */,
+				43778F372B9F026E00B18B8E /* Gratitude listUITests */,
+				43778F1B2B9F026C00B18B8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43778F1B2B9F026C00B18B8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43778F1A2B9F026C00B18B8E /* Gratitude list.app */,
+				43778F2A2B9F026E00B18B8E /* Gratitude listTests.xctest */,
+				43778F342B9F026E00B18B8E /* Gratitude listUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43778F1C2B9F026C00B18B8E /* Gratitude list */ = {
+			isa = PBXGroup;
+			children = (
+				43778F7A2B9F49FF00B18B8E /* Views */,
+				43778F6A2B9F406900B18B8E /* Router */,
+				43778F672B9F37E100B18B8E /* Utils */,
+				43778F552B9F1AD000B18B8E /* ViewComponents */,
+				43778F522B9F1A6900B18B8E /* Services */,
+				43778F4D2B9F17DE00B18B8E /* Models */,
+				43778F472B9F0B3800B18B8E /* Resources */,
+				43778F1D2B9F026C00B18B8E /* Gratitude_listApp.swift */,
+				43778F212B9F026E00B18B8E /* Assets.xcassets */,
+				43778F232B9F026E00B18B8E /* Preview Content */,
+			);
+			path = "Gratitude list";
+			sourceTree = "<group>";
+		};
+		43778F232B9F026E00B18B8E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				43778F242B9F026E00B18B8E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43778F2D2B9F026E00B18B8E /* Gratitude listTests */ = {
+			isa = PBXGroup;
+			children = (
+				43778F2E2B9F026E00B18B8E /* Gratitude_listTests.swift */,
+			);
+			path = "Gratitude listTests";
+			sourceTree = "<group>";
+		};
+		43778F372B9F026E00B18B8E /* Gratitude listUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43778F382B9F026E00B18B8E /* Gratitude_listUITests.swift */,
+				43778F3A2B9F026E00B18B8E /* Gratitude_listUITestsLaunchTests.swift */,
+			);
+			path = "Gratitude listUITests";
+			sourceTree = "<group>";
+		};
+		43778F472B9F0B3800B18B8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43778F482B9F0B8500B18B8E /* GratitudeList.json */,
+				43778F4A2B9F0C2700B18B8E /* GratitudeList.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43778F4D2B9F17DE00B18B8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43778F4E2B9F17F400B18B8E /* GratitudeListModel.swift */,
+				43778F502B9F19DC00B18B8E /* GratitudeDetailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43778F522B9F1A6900B18B8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				43778F622B9F2A0A00B18B8E /* Mappers */,
+				43778F592B9F1B7300B18B8E /* TextFile */,
+				43778F582B9F1B4200B18B8E /* CoreData */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		43778F532B9F1A9D00B18B8E /* GratitudeList */ = {
+			isa = PBXGroup;
+			children = (
+				43778F5E2B9F27E100B18B8E /* GratitudeListView.swift */,
+				43778F602B9F27F200B18B8E /* GratitudeListViewModel.swift */,
+				43778F652B9F370000B18B8E /* GratitudeCard.swift */,
+			);
+			path = GratitudeList;
+			sourceTree = "<group>";
+		};
+		43778F542B9F1AB400B18B8E /* GratitudeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				43778F6F2B9F424500B18B8E /* GratitudeDetailView.swift */,
+				43778F6D2B9F40D100B18B8E /* GratitudeDetailViewModel.swift */,
+			);
+			path = GratitudeDetail;
+			sourceTree = "<group>";
+		};
+		43778F552B9F1AD000B18B8E /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				43778F802B9F5BEC00B18B8E /* TextFieldComponent */,
+				43778F732B9F466E00B18B8E /* Navigation */,
+				43778F852B9F5DFB00B18B8E /* DateView.swift */,
+				43778F872B9F5EC200B18B8E /* ListOfTagsComponent.swift */,
+				43778F892B9F8E9400B18B8E /* ListOfImages.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		43778F582B9F1B4200B18B8E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				43778F562B9F1B3700B18B8E /* CoreDataGratitudeService.swift */,
+				43778F5C2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		43778F592B9F1B7300B18B8E /* TextFile */ = {
+			isa = PBXGroup;
+			children = (
+				43778F5A2B9F1BC000B18B8E /* TextFileService.swift */,
+			);
+			path = TextFile;
+			sourceTree = "<group>";
+		};
+		43778F622B9F2A0A00B18B8E /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				43778F632B9F2A3600B18B8E /* CoreDataGratitudeMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		43778F672B9F37E100B18B8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				43778F682B9F383300B18B8E /* DateFormatter+BaseTransformations.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		43778F6A2B9F406900B18B8E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				43778F6B2B9F407D00B18B8E /* Router.swift */,
+				43778F712B9F42C900B18B8E /* RouterView.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		43778F732B9F466E00B18B8E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				43778F742B9F468000B18B8E /* NavigationTitle.swift */,
+				43778F762B9F46D200B18B8E /* NavigationBackButton.swift */,
+				43778F782B9F477500B18B8E /* NavigationAddButton.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		43778F7A2B9F49FF00B18B8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43778F7B2B9F4A2400B18B8E /* AddGratitude */,
+				43778F542B9F1AB400B18B8E /* GratitudeDetail */,
+				43778F532B9F1A9D00B18B8E /* GratitudeList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43778F7B2B9F4A2400B18B8E /* AddGratitude */ = {
+			isa = PBXGroup;
+			children = (
+				43778F7C2B9F4A3900B18B8E /* AddGratitudeView.swift */,
+				43778F7E2B9F4A4600B18B8E /* AddGratitudeViewModel.swift */,
+			);
+			path = AddGratitude;
+			sourceTree = "<group>";
+		};
+		43778F802B9F5BEC00B18B8E /* TextFieldComponent */ = {
+			isa = PBXGroup;
+			children = (
+				43778F812B9F5C0B00B18B8E /* TextFieldComponent.swift */,
+			);
+			path = TextFieldComponent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43778F192B9F026C00B18B8E /* Gratitude list */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43778F3E2B9F026E00B18B8E /* Build configuration list for PBXNativeTarget "Gratitude list" */;
+			buildPhases = (
+				43778F162B9F026C00B18B8E /* Sources */,
+				43778F172B9F026C00B18B8E /* Frameworks */,
+				43778F182B9F026C00B18B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gratitude list";
+			productName = "Gratitude list";
+			productReference = 43778F1A2B9F026C00B18B8E /* Gratitude list.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43778F292B9F026E00B18B8E /* Gratitude listTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43778F412B9F026E00B18B8E /* Build configuration list for PBXNativeTarget "Gratitude listTests" */;
+			buildPhases = (
+				43778F262B9F026E00B18B8E /* Sources */,
+				43778F272B9F026E00B18B8E /* Frameworks */,
+				43778F282B9F026E00B18B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43778F2C2B9F026E00B18B8E /* PBXTargetDependency */,
+			);
+			name = "Gratitude listTests";
+			productName = "Gratitude listTests";
+			productReference = 43778F2A2B9F026E00B18B8E /* Gratitude listTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43778F332B9F026E00B18B8E /* Gratitude listUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43778F442B9F026E00B18B8E /* Build configuration list for PBXNativeTarget "Gratitude listUITests" */;
+			buildPhases = (
+				43778F302B9F026E00B18B8E /* Sources */,
+				43778F312B9F026E00B18B8E /* Frameworks */,
+				43778F322B9F026E00B18B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43778F362B9F026E00B18B8E /* PBXTargetDependency */,
+			);
+			name = "Gratitude listUITests";
+			productName = "Gratitude listUITests";
+			productReference = 43778F342B9F026E00B18B8E /* Gratitude listUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43778F122B9F026C00B18B8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					43778F192B9F026C00B18B8E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					43778F292B9F026E00B18B8E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 43778F192B9F026C00B18B8E;
+					};
+					43778F332B9F026E00B18B8E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 43778F192B9F026C00B18B8E;
+					};
+				};
+			};
+			buildConfigurationList = 43778F152B9F026C00B18B8E /* Build configuration list for PBXProject "Gratitude list" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43778F112B9F026C00B18B8E;
+			productRefGroup = 43778F1B2B9F026C00B18B8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43778F192B9F026C00B18B8E /* Gratitude list */,
+				43778F292B9F026E00B18B8E /* Gratitude listTests */,
+				43778F332B9F026E00B18B8E /* Gratitude listUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43778F182B9F026C00B18B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43778F252B9F026E00B18B8E /* Preview Assets.xcassets in Resources */,
+				43778F492B9F0B8500B18B8E /* GratitudeList.json in Resources */,
+				43778F222B9F026E00B18B8E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43778F282B9F026E00B18B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43778F322B9F026E00B18B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43778F162B9F026C00B18B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43778F8A2B9F8E9400B18B8E /* ListOfImages.swift in Sources */,
+				43778F612B9F27F200B18B8E /* GratitudeListViewModel.swift in Sources */,
+				43778F792B9F477500B18B8E /* NavigationAddButton.swift in Sources */,
+				43778F822B9F5C0B00B18B8E /* TextFieldComponent.swift in Sources */,
+				43778F7D2B9F4A3900B18B8E /* AddGratitudeView.swift in Sources */,
+				43778F662B9F370000B18B8E /* GratitudeCard.swift in Sources */,
+				43778F5D2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift in Sources */,
+				43778F642B9F2A3600B18B8E /* CoreDataGratitudeMapper.swift in Sources */,
+				43778F772B9F46D200B18B8E /* NavigationBackButton.swift in Sources */,
+				43778F5B2B9F1BC000B18B8E /* TextFileService.swift in Sources */,
+				43778F692B9F383300B18B8E /* DateFormatter+BaseTransformations.swift in Sources */,
+				43778F6E2B9F40D100B18B8E /* GratitudeDetailViewModel.swift in Sources */,
+				43778F572B9F1B3700B18B8E /* CoreDataGratitudeService.swift in Sources */,
+				43778F882B9F5EC200B18B8E /* ListOfTagsComponent.swift in Sources */,
+				43778F7F2B9F4A4600B18B8E /* AddGratitudeViewModel.swift in Sources */,
+				43778F5F2B9F27E100B18B8E /* GratitudeListView.swift in Sources */,
+				43778F4F2B9F17F400B18B8E /* GratitudeListModel.swift in Sources */,
+				43778F702B9F424500B18B8E /* GratitudeDetailView.swift in Sources */,
+				43778F6C2B9F407D00B18B8E /* Router.swift in Sources */,
+				43778F862B9F5DFB00B18B8E /* DateView.swift in Sources */,
+				43778F752B9F468000B18B8E /* NavigationTitle.swift in Sources */,
+				43778F1E2B9F026C00B18B8E /* Gratitude_listApp.swift in Sources */,
+				43778F4C2B9F0C2700B18B8E /* GratitudeList.xcdatamodeld in Sources */,
+				43778F512B9F19DC00B18B8E /* GratitudeDetailModel.swift in Sources */,
+				43778F722B9F42C900B18B8E /* RouterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43778F262B9F026E00B18B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43778F2F2B9F026E00B18B8E /* Gratitude_listTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43778F302B9F026E00B18B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43778F3B2B9F026E00B18B8E /* Gratitude_listUITestsLaunchTests.swift in Sources */,
+				43778F392B9F026E00B18B8E /* Gratitude_listUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43778F2C2B9F026E00B18B8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43778F192B9F026C00B18B8E /* Gratitude list */;
+			targetProxy = 43778F2B2B9F026E00B18B8E /* PBXContainerItemProxy */;
+		};
+		43778F362B9F026E00B18B8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43778F192B9F026C00B18B8E /* Gratitude list */;
+			targetProxy = 43778F352B9F026E00B18B8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43778F3C2B9F026E00B18B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43778F3D2B9F026E00B18B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43778F3F2B9F026E00B18B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gratitude list/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HCT.Gratitude-list";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43778F402B9F026E00B18B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gratitude list/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HCT.Gratitude-list";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43778F422B9F026E00B18B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HCT.Gratitude-listTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gratitude list.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gratitude list";
+			};
+			name = Debug;
+		};
+		43778F432B9F026E00B18B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HCT.Gratitude-listTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gratitude list.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gratitude list";
+			};
+			name = Release;
+		};
+		43778F452B9F026E00B18B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HCT.Gratitude-listUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gratitude list";
+			};
+			name = Debug;
+		};
+		43778F462B9F026E00B18B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HCT.Gratitude-listUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gratitude list";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43778F152B9F026C00B18B8E /* Build configuration list for PBXProject "Gratitude list" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43778F3C2B9F026E00B18B8E /* Debug */,
+				43778F3D2B9F026E00B18B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43778F3E2B9F026E00B18B8E /* Build configuration list for PBXNativeTarget "Gratitude list" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43778F3F2B9F026E00B18B8E /* Debug */,
+				43778F402B9F026E00B18B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43778F412B9F026E00B18B8E /* Build configuration list for PBXNativeTarget "Gratitude listTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43778F422B9F026E00B18B8E /* Debug */,
+				43778F432B9F026E00B18B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43778F442B9F026E00B18B8E /* Build configuration list for PBXNativeTarget "Gratitude listUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43778F452B9F026E00B18B8E /* Debug */,
+				43778F462B9F026E00B18B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		43778F4A2B9F0C2700B18B8E /* GratitudeList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				43778F4B2B9F0C2700B18B8E /* GratitudeList.xcdatamodel */,
+			);
+			currentVersion = 43778F4B2B9F0C2700B18B8E /* GratitudeList.xcdatamodel */;
+			path = GratitudeList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 43778F122B9F026C00B18B8E /* Project object */;
+}
