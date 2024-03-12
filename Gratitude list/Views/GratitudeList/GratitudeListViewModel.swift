@@ -26,6 +26,8 @@ class GratitudeListViewModel: ObservableObject {
             let gratitudeEntityList = try await service.getListOfGratitudes()
             self.gratitudeList = CoreDataGratitudeMapper.mapGratitudeEntityToGratitudeListModel(gratitudeEntitys: gratitudeEntityList)
             
+            self.gratitudeList = self.gratitudeList.sorted(by: { $0.date > $1.date })
+            
             self.isLoading = false
         } catch {
             self.error = error
