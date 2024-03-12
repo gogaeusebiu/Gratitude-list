@@ -18,7 +18,6 @@
 		43778F4F2B9F17F400B18B8E /* GratitudeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F4E2B9F17F400B18B8E /* GratitudeListModel.swift */; };
 		43778F512B9F19DC00B18B8E /* GratitudeDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F502B9F19DC00B18B8E /* GratitudeDetailModel.swift */; };
 		43778F572B9F1B3700B18B8E /* CoreDataGratitudeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F562B9F1B3700B18B8E /* CoreDataGratitudeService.swift */; };
-		43778F5B2B9F1BC000B18B8E /* TextFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F5A2B9F1BC000B18B8E /* TextFileService.swift */; };
 		43778F5D2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F5C2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift */; };
 		43778F5F2B9F27E100B18B8E /* GratitudeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F5E2B9F27E100B18B8E /* GratitudeListView.swift */; };
 		43778F612B9F27F200B18B8E /* GratitudeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F602B9F27F200B18B8E /* GratitudeListViewModel.swift */; };
@@ -38,6 +37,13 @@
 		43778F862B9F5DFB00B18B8E /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F852B9F5DFB00B18B8E /* DateView.swift */; };
 		43778F882B9F5EC200B18B8E /* ListOfTagsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F872B9F5EC200B18B8E /* ListOfTagsComponent.swift */; };
 		43778F8A2B9F8E9400B18B8E /* ListOfImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F892B9F8E9400B18B8E /* ListOfImages.swift */; };
+		43778F8D2BA0553F00B18B8E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F8C2BA0553F00B18B8E /* Toast.swift */; };
+		43778F8F2BA0556200B18B8E /* ToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F8E2BA0556200B18B8E /* ToastStyle.swift */; };
+		43778F912BA055AB00B18B8E /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F902BA055AB00B18B8E /* ToastView.swift */; };
+		43778F932BA0562100B18B8E /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F922BA0562100B18B8E /* ToastModifier.swift */; };
+		43778F952BA056DB00B18B8E /* View+ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F942BA056DB00B18B8E /* View+ToastModifier.swift */; };
+		43778F982BA066A000B18B8E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F972BA066A000B18B8E /* ActivityIndicator.swift */; };
+		43778F9A2BA066EE00B18B8E /* ActivityIndicatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43778F992BA066EE00B18B8E /* ActivityIndicatorModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +78,6 @@
 		43778F4E2B9F17F400B18B8E /* GratitudeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeListModel.swift; sourceTree = "<group>"; };
 		43778F502B9F19DC00B18B8E /* GratitudeDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeDetailModel.swift; sourceTree = "<group>"; };
 		43778F562B9F1B3700B18B8E /* CoreDataGratitudeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataGratitudeService.swift; sourceTree = "<group>"; };
-		43778F5A2B9F1BC000B18B8E /* TextFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileService.swift; sourceTree = "<group>"; };
 		43778F5C2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataGratitudeServiceProtocol.swift; sourceTree = "<group>"; };
 		43778F5E2B9F27E100B18B8E /* GratitudeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeListView.swift; sourceTree = "<group>"; };
 		43778F602B9F27F200B18B8E /* GratitudeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeListViewModel.swift; sourceTree = "<group>"; };
@@ -92,6 +97,13 @@
 		43778F852B9F5DFB00B18B8E /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 		43778F872B9F5EC200B18B8E /* ListOfTagsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTagsComponent.swift; sourceTree = "<group>"; };
 		43778F892B9F8E9400B18B8E /* ListOfImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfImages.swift; sourceTree = "<group>"; };
+		43778F8C2BA0553F00B18B8E /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		43778F8E2BA0556200B18B8E /* ToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastStyle.swift; sourceTree = "<group>"; };
+		43778F902BA055AB00B18B8E /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		43778F922BA0562100B18B8E /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		43778F942BA056DB00B18B8E /* View+ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ToastModifier.swift"; sourceTree = "<group>"; };
+		43778F972BA066A000B18B8E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		43778F992BA066EE00B18B8E /* ActivityIndicatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				43778F622B9F2A0A00B18B8E /* Mappers */,
-				43778F592B9F1B7300B18B8E /* TextFile */,
 				43778F582B9F1B4200B18B8E /* CoreData */,
 			);
 			path = Services;
@@ -231,6 +242,8 @@
 		43778F552B9F1AD000B18B8E /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				43778F962BA0667300B18B8E /* LoadingView */,
+				43778F8B2BA0523B00B18B8E /* ToastMessage */,
 				43778F802B9F5BEC00B18B8E /* TextFieldComponent */,
 				43778F732B9F466E00B18B8E /* Navigation */,
 				43778F852B9F5DFB00B18B8E /* DateView.swift */,
@@ -247,14 +260,6 @@
 				43778F5C2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		43778F592B9F1B7300B18B8E /* TextFile */ = {
-			isa = PBXGroup;
-			children = (
-				43778F5A2B9F1BC000B18B8E /* TextFileService.swift */,
-			);
-			path = TextFile;
 			sourceTree = "<group>";
 		};
 		43778F622B9F2A0A00B18B8E /* Mappers */ = {
@@ -317,6 +322,27 @@
 				43778F812B9F5C0B00B18B8E /* TextFieldComponent.swift */,
 			);
 			path = TextFieldComponent;
+			sourceTree = "<group>";
+		};
+		43778F8B2BA0523B00B18B8E /* ToastMessage */ = {
+			isa = PBXGroup;
+			children = (
+				43778F8C2BA0553F00B18B8E /* Toast.swift */,
+				43778F8E2BA0556200B18B8E /* ToastStyle.swift */,
+				43778F902BA055AB00B18B8E /* ToastView.swift */,
+				43778F922BA0562100B18B8E /* ToastModifier.swift */,
+				43778F942BA056DB00B18B8E /* View+ToastModifier.swift */,
+			);
+			path = ToastMessage;
+			sourceTree = "<group>";
+		};
+		43778F962BA0667300B18B8E /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				43778F972BA066A000B18B8E /* ActivityIndicator.swift */,
+				43778F992BA066EE00B18B8E /* ActivityIndicatorModifier.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,27 +479,33 @@
 				43778F8A2B9F8E9400B18B8E /* ListOfImages.swift in Sources */,
 				43778F612B9F27F200B18B8E /* GratitudeListViewModel.swift in Sources */,
 				43778F792B9F477500B18B8E /* NavigationAddButton.swift in Sources */,
+				43778F952BA056DB00B18B8E /* View+ToastModifier.swift in Sources */,
 				43778F822B9F5C0B00B18B8E /* TextFieldComponent.swift in Sources */,
 				43778F7D2B9F4A3900B18B8E /* AddGratitudeView.swift in Sources */,
 				43778F662B9F370000B18B8E /* GratitudeCard.swift in Sources */,
 				43778F5D2B9F1D5A00B18B8E /* CoreDataGratitudeServiceProtocol.swift in Sources */,
 				43778F642B9F2A3600B18B8E /* CoreDataGratitudeMapper.swift in Sources */,
+				43778F912BA055AB00B18B8E /* ToastView.swift in Sources */,
 				43778F772B9F46D200B18B8E /* NavigationBackButton.swift in Sources */,
-				43778F5B2B9F1BC000B18B8E /* TextFileService.swift in Sources */,
 				43778F692B9F383300B18B8E /* DateFormatter+BaseTransformations.swift in Sources */,
 				43778F6E2B9F40D100B18B8E /* GratitudeDetailViewModel.swift in Sources */,
 				43778F572B9F1B3700B18B8E /* CoreDataGratitudeService.swift in Sources */,
+				43778F8D2BA0553F00B18B8E /* Toast.swift in Sources */,
 				43778F882B9F5EC200B18B8E /* ListOfTagsComponent.swift in Sources */,
+				43778F932BA0562100B18B8E /* ToastModifier.swift in Sources */,
 				43778F7F2B9F4A4600B18B8E /* AddGratitudeViewModel.swift in Sources */,
+				43778F9A2BA066EE00B18B8E /* ActivityIndicatorModifier.swift in Sources */,
 				43778F5F2B9F27E100B18B8E /* GratitudeListView.swift in Sources */,
 				43778F4F2B9F17F400B18B8E /* GratitudeListModel.swift in Sources */,
 				43778F702B9F424500B18B8E /* GratitudeDetailView.swift in Sources */,
 				43778F6C2B9F407D00B18B8E /* Router.swift in Sources */,
 				43778F862B9F5DFB00B18B8E /* DateView.swift in Sources */,
+				43778F982BA066A000B18B8E /* ActivityIndicator.swift in Sources */,
 				43778F752B9F468000B18B8E /* NavigationTitle.swift in Sources */,
 				43778F1E2B9F026C00B18B8E /* Gratitude_listApp.swift in Sources */,
 				43778F4C2B9F0C2700B18B8E /* GratitudeList.xcdatamodeld in Sources */,
 				43778F512B9F19DC00B18B8E /* GratitudeDetailModel.swift in Sources */,
+				43778F8F2BA0556200B18B8E /* ToastStyle.swift in Sources */,
 				43778F722B9F42C900B18B8E /* RouterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -58,7 +58,9 @@ struct TextFieldComponent: View {
             }
             HStack(alignment: .center, spacing: 8) {
            
-                if let errorText = errorText, errorText.wrappedValue.isEmpty {
+                if errorText == nil {
+                    Image(systemName: logoImageName).padding(1)
+                } else if let errorText = errorText, errorText.wrappedValue.isEmpty {
                     Image(systemName: logoImageName).padding(1)
                 } else {
                     Image(systemName: "exclamationmark.triangle").padding(1).foregroundColor(.red)

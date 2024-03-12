@@ -47,8 +47,12 @@ struct AddGratitudeView: View {
                 
                 Button {
                     Task {
+                        viewModel.error = nil
                         await viewModel.addGratitude()
-                        router.popToRoot()
+                        if viewModel.error == nil {
+                            router.popToRoot()
+                            viewModel.error = nil
+                        }
                     }
                 } label: {
                     HStack(alignment: .center, spacing: 10) {
@@ -78,6 +82,8 @@ struct AddGratitudeView: View {
                 }
             }
         }
+        .toastView(toast: $viewModel.toast)
+        .modifier(ActivityIndicatorModifier(isLoading: viewModel.isLoading, message: "Saving gratitude"))
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

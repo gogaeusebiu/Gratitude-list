@@ -14,6 +14,10 @@ class AddGratitudeViewModel: ObservableObject {
     private let service: CoreDataGratitudeServiceProtocol
     private var cancellables: Set<AnyCancellable> = []
     
+    @Published var toast: Toast? = nil
+    @Published var isLoading: Bool = false
+    @Published var error: Error?
+
     @Published var gratitudeDescription = ""
     @Published var inlineGratitudeDescriptiontError = ""
     
@@ -39,7 +43,10 @@ class AddGratitudeViewModel: ObservableObject {
     
     //MARK: Public functions
     
+    @MainActor
     func addGratitude() async {
+        self.isLoading = true
+
         do {
             var imageDataArray = [Data]()
             for item in photoPickerItems {
@@ -49,8 +56,12 @@ class AddGratitudeViewModel: ObservableObject {
             }
             
             try await service.addGratitude(with: UUID(), text: gratitudeDescription, date: Date.now, tags: hashtags, images: imageDataArray)
-        } catch {
             
+            self.isLoading = false
+        } catch {
+            self.error = error
+            self.isLoading = false
+            self.toast = Toast(style: .error, message: error.localizedDescription)
         }
     }
     

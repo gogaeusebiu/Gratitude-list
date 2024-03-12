@@ -40,6 +40,8 @@ struct GratitudeDetailView: View {
             }
             .padding(20)
         }
+        .toastView(toast: $viewModel.toast)
+        .modifier(ActivityIndicatorModifier(isLoading: viewModel.isLoading, message: viewModel.loadingMessage))
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -49,8 +51,12 @@ struct GratitudeDetailView: View {
                 NavigationImageButton(systemName: "trash")
                     .tapAction {
                         Task {
+                            viewModel.error = nil
                             await viewModel.removeGratitude()
-                            router.popToRoot()
+                            if viewModel.error == nil {
+                                router.popToRoot()
+                                viewModel.error = nil
+                            }
                         }
                     }
             }

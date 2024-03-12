@@ -25,7 +25,6 @@ struct GratitudeCard: View {
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: .infinity, maxHeight: 100)
-                    .contentShape(Rectangle())
                     .clipShape(.rect(cornerRadius: 8))
             }
             
